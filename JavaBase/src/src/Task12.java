@@ -4,8 +4,9 @@ package src;
  * 
  * @author артем
  * 
- * 12 Дано трехзначное число.
- * найти сумму и проиведение его цифр
+ * 12.  given 3-digit number
+ * calculate sum and multiplication of its digits
+ * 
  */
 public class Task12 {
 
