@@ -1,11 +1,11 @@
 package src;
 
 /**
+ * 20. given coordinates of two different fields on the chess field x1, y1, x2, y2
+ *  (integers, in range 1-8)
+ *  
+ * verify the statement: "Qeen figure can move from cell (x1; y1) to cell (x2; y2) per ONE move"
  *
- *   20.	Даны координаты двух различных полей шахматной доски x1, y1, x2, y2 
- *  (целые числа, лежащие в диапазоне 1–8). 
- *  Проверить истинность высказывания:
- *  «Ферзь за один ход может перейти с одного поля на другое».
  * @author pavlovar
  *
  */
@@ -20,6 +20,12 @@ public class Task20 {
 	
 	public static boolean checkMove (int oldX, int oldY, int newX, int newY) {
 		
+		int dimension = 8;
+		
+		if (oldX <= 0 || oldX > dimension || oldY <= 0 || oldY > dimension ||
+				newX <= 0 || newX > dimension || newY <= 0 || newY > dimension) {
+			return false;
+		}
 		int moveX = newX - oldX;
 		int moveY = newY - oldY;
 		System.out.println("Old cooradinate (" + oldX + ", " + oldY + ")\n"
