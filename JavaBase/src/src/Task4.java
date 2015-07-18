@@ -1,8 +1,8 @@
 package src;
 /**
+ * 4. Change values of variables A and B, 
+ * using only these two variables and print them 
  * 
- * 4. Поменять местами содержимое переменных A и B, 
- * используя только эти две переменные, и вывести новые значения A и B.
  */
 
 public class Task4 {
